@@ -22,3 +22,12 @@ if(test -d ~/Desktop/Ablestate/$ncopy/)then
 else
 	echo "The copy folder is not available according to the system."
 fi
+
+x=5
+y=10
+if [$x -eq $y]
+then
+	echo "X = Y"
+else
+	echo "X != Y. Expected"
+fi

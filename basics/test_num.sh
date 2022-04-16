@@ -3,8 +3,9 @@ $SHELL
 echo "****** Numeric comparisons."
 x=5
 y=10
+local func;
 
-# Below are the commands used for comparing numbers in shell scripts.
+# Below are the commands used for comparing numbers in shell scriptsi.
 # x -eq y
 # x -ne y
 # x -gt y

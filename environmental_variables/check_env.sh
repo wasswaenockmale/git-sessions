@@ -2,15 +2,17 @@
 # Check for environment variables.
 
 # Uncomment the following line to remove the variable.
-unset DISPLAY
+#unset DISPLAY
+# Saving the environmental variables in a variables.txt in a folder called developers
 
+set >> ~/Desktop/Ablestate/developers/variables.txt
 if [ "$DISPLAY" == "" ]
 then
 	echo "DISPLAY not set, using : 0.0 as default."
 	DISPLAY=":0.0"
 fi
 
-unset SHELL
+#unset SHELL
 
 if [ "$SHELL" == "" ]
 then
@@ -18,7 +20,7 @@ then
 	SHELL=/bin/bash
 fi
 
-unset USER
+#unset USER
 
 if [ "$USER" == "" ]
 then
@@ -26,7 +28,7 @@ then
 	read USER
 fi
 
-unset HOME
+#unset HOME
 if [ "$HOME" == "" ]
 then
 	# Check for Mac OS X home.

@@ -1,5 +1,6 @@
 # Checks command-line arguments.
-
+# This program requires a user to put more than one arguments in the command line
+# It will take up all the arguments that the user will enter and it will use thm accordingly.
 echo "Script: $0"
 
 echo "Number of items on command line: $#"

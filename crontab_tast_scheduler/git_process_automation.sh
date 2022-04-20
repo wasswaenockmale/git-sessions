@@ -1,13 +1,22 @@
 #!/usr/bin/bash
 
-path=~/Desktop/Ablestate/developers/Learning_shell/
-# Get the message from the use for the commit of the git process commit
-
-:
-if [ -e *.git ]
+# Asking for absolute path to the given folder.
+ENTRY=zenity --entry \
+	--title="Absolute Path" \
+	--text="Enter the absolute path to the git folder" \
+	--entry-text="Enter the path"
+echo "$ENTRY"
+if [ -L "$ENTRY/.git" ]
 then
-	git diff --quiet; nochanges=$?
+	git diff --quiet; 
+	nochanges=$?
+	echo -n "$nochanges"
 	if [$nochanges -eq 1]
 	then
-		git add .;
-		git commit -m "
+		echo "$ENTRY path exists"
+	else
+		echo "There are no changes in the folder."
+	fi
+else
+	echo "The folder is not a Local git repo."
+fi

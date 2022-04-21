@@ -1,6 +1,6 @@
 # Github Learning repository.
 
-This repo contains the first sessions assignments from for Ablestate Creactives Limited. And the sessions include.
+This repo contains the first session assignments from for Ablestate Creactives Limited. And the sessions include.
 - Personal Network Development session.
 - SDLC session.
 - Git session.

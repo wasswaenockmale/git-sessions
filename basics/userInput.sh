@@ -9,9 +9,9 @@ echo -n "The kernal version is "
 uname -r				# Command to return the kernal version of the user's computer's OS
 
 echo -n "Please enter your first Name: "
-read firstname  			# read the user's first name
+read firstname  		# read the user's first name
 echo -n "Please enter your second Name: "
-read secondname				# read the user's second name
+read secondname			# read the user's second name
 echo -n "What is your genda(should be like either 'm' or 'f': "
 read genda
 echo -n "Enter the district that you from: "

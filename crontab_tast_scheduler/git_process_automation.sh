@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 # Asking for absolute path to the given folder.
+CMD="ls -al"
 if zenity --entry \
 	--title="Absolute Path" \
 	--text="Enter the absolute path to the git folder" \
@@ -8,7 +9,7 @@ if zenity --entry \
 then
 	ENTRY=$?
 	echo "$ENTRY"
-	if [ -L "$ENTRY/.git" ]
+	if [ -L "$ENTRY/.git" ]	
 	then
 		git diff --quiet; 
 		nochanges=$?
